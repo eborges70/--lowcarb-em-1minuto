@@ -8,47 +8,31 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f5f5f5;
-      color: #333;
-    }
-    header {
-      background: linear-gradient(90deg, #004d40, #00796b);
+      background: url('https://apto.vc/_next/image?url=https%3A%2F%2Fassets.apto.vc%2Fimg%2F2025%2F08%2Flhopjxiw-685e8eb2ec3e5-1.jpg&w=1920&q=75') no-repeat center center fixed;
+      background-size: cover;
       color: white;
+    }
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      min-height: 100vh;
       padding: 40px 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-    .container {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    .features {
       display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      margin-top: 30px;
-    }
-    .feature {
-      flex: 1 1 300px;
-      background: white;
-      border-radius: 8px;
-      padding: 20px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    .feature h3 {
-      margin-top: 0;
-      color: #00796b;
-    }
-    .cta {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       text-align: center;
-      margin: 50px 0;
     }
-    .cta a {
-      background-color: #00796b;
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1.2em;
+      max-width: 700px;
+      margin-bottom: 30px;
+    }
+    a.button {
+      background-color: #00c853;
       color: white;
       padding: 15px 30px;
       border-radius: 5px;
@@ -56,52 +40,16 @@
       font-size: 1.2em;
       transition: background 0.3s ease;
     }
-    .cta a:hover {
-      background-color: #004d40;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
-      color: #777;
+    a.button:hover {
+      background-color: #009624;
     }
   </style>
 </head>
 <body>
-
-  <header>
+  <div class="overlay">
     <h1>Vila Diamantina</h1>
-    <p>Conforto, natureza e praticidade em um só lugar</p>
-  </header>
-
-  <div class="container">
-    <h2>Seu novo lar espera por você</h2>
-    <p>Casas duplex com projeto moderno, três suítes, quintal com jacuzzi e churrasqueira. Localização privilegiada próxima ao Bioparque Zoobotânico, supermercados, farmácias e muito mais.</p>
-
-    <div class="features">
-      <div class="feature">
-        <h3>🏡 Projeto Moderno</h3>
-        <p>Casas com três suítes, garagem e acabamento de alto padrão.</p>
-      </div>
-      <div class="feature">
-        <h3>🛁 Área de Lazer Privativa</h3>
-        <p>Jacuzzi, churrasqueira e quintal para momentos inesquecíveis com a família.</p>
-      </div>
-      <div class="feature">
-        <h3>📍 Localização Estratégica</h3>
-        <p>Perto de tudo: Bioparque, supermercados, farmácias e áreas verdes.</p>
-      </div>
-    </div>
-
-    <div class="cta">
-      <p><strong>Quer agendar uma visita ou saber mais?</strong></p>
-      <a href="https://api.whatsapp.com/send?phone=5586995622532&text=Olá,%20quero%20saber%20mais%20sobre%20o%20Vila%20Diamantina!">Fale conosco no WhatsApp</a>
-    </div>
+    <p>Casas duplex com três suítes, jacuzzi, churrasqueira e localização privilegiada. Viva o equilíbrio entre conforto, natureza e praticidade.</p>
+    <a class="button" href="https://api.whatsapp.com/send?phone=5586995622532&text=Olá,%20quero%20saber%20mais%20sobre%20o%20Vila%20Diamantina!">Fale conosco no WhatsApp</a>
   </div>
-
-  <footer>
-    © 2025 Vila Diamantina. Todos os direitos reservados.
-  </footer>
-
 </body>
 </html>
