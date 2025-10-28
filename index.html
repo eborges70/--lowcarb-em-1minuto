@@ -12,8 +12,9 @@
       background-size: cover;
       color: white;
     }
+
     .overlay {
-      background-color: rgba(0, 0, 0, 0.6);
+      background-color: rgba(0, 0, 0, 0.5);
       min-height: 100vh;
       padding: 40px 20px;
       display: flex;
@@ -22,15 +23,25 @@
       align-items: center;
       text-align: center;
     }
+
+    @media (max-width: 600px) {
+      .overlay {
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 30px 15px;
+      }
+    }
+
     h1 {
       font-size: 3em;
       margin-bottom: 10px;
     }
+
     p {
       font-size: 1.2em;
       max-width: 700px;
       margin-bottom: 30px;
     }
+
     a.button {
       background-color: #00c853;
       color: white;
@@ -40,6 +51,7 @@
       font-size: 1.2em;
       transition: background 0.3s ease;
     }
+
     a.button:hover {
       background-color: #009624;
     }
